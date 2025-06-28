@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.appHeader {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 10px solid #dee2e6;
+    color: white;
+}
+
+.formSection {
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin: 50px;
+    border-radius: 10px;
+    border-right: 5px solid #dee2e6;
+    border-bottom: 5px solid #dee2e6;
+}
+
+.formSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formSection > form {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.formSection .form-book {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formSection label {
+    font-size: 17px;
+}
+
+.form-book input, .formSection button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-book_checkbox {
+    display: flex;
+    padding: 10px;
+    gap: 2px;
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(255, 255, 255);
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 24px;
+}
+
+.formSection button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.formSection button:hover {
+    background-color: #0056b3;
+}
+
+.searchSection {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 5px solid #dee2e6;
+    border-bottom: 5px solid #dee2e6;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.searchSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchSection form {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.searchSection label {
+    font-size: 20px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+.searchSection input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.searchSection button {
+    padding: 0 20px 0 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.searchSection button:hover {
+    background-color: #0056b3;
+}
+
+.list-book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 1024px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+    margin: 0 0 10px;
+}
+
+.book p {
+    margin: 5px 0;
+}
+.book .actions {
+    display: flex;
+    margin-top: 10px;
+}
+
+.book button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book button:hover {
+    background-color: #0056b3;
+}
+
+.incompleteListSection, .completeListSection {
+    margin: 20px;
+}
+
+.incompleteListSection h2, .completeListSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.incompleteListSection .list-book, .completeListSection .list-book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .formSection {
+        margin : 0;
+        border: none;
+    }
+    
+    .searchSection {
+        margin : 0;
+        border : none;
+    }
+    
+    .book {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px){
+    .searchSection label {
+        display: none;
+    }
+}
